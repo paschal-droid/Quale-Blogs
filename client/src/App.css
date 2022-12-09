@@ -1,0 +1,47 @@
+/* ? For Laptop, desktop and 4k screen size */
+
+
+
+.dynamic-ui {
+  width: 94.9%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.dynamic-row {
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+
+.dynamic-col {
+  display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+  
+}
+
+
+/* ? for Tablets and Ipads screen size */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .dynamic-ui {
+      width: 90%;
+    }
+}
+
+
+/* ? For Mobile size screens */
+
+@media screen and (max-width: 767px) {
+  .dynamic-ui {
+    width: 92%;
+  }
+
+  .dynamic-row {
+    grid-template-rows: 100% auto;
+    grid-template-columns: none;
+  }
+}

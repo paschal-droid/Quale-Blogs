@@ -1,0 +1,105 @@
+/* ? For Laptop, desktop and 4k screen size */
+
+.trend-dashboard {
+    display: grid;
+    overflow-y: auto;
+    grid-template-columns: repeat(2, 50%);
+    border-bottom: 1px solid var(--light-grey);
+    padding-top: 30px;
+    height: 50vh;
+}
+
+.trends-card {
+    display: flex;
+    margin: 7px;
+    justify-content: space-between;
+}
+
+.trend-card-img {
+    flex: 0.4;
+}
+
+.trend-card-img img {
+    width: 100%;
+}
+
+
+.trend-card-content {
+    font-family: var(--font-text);
+    flex: 0.5;
+    margin-top: 0;
+}
+.trend-card-content > * {
+    margin: 4px;
+
+}
+.trend-card-content h3 {
+    font-family: var(--font-head);
+}
+
+.trend-card-content p {
+    font-size: 12px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 25px;
+    padding-right: 5px;
+
+}
+
+.profile-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.timepost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timepost p{
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--grey);
+}
+
+.save-icon {
+    cursor: pointer;
+    color: var(--grey);
+}
+
+.save-icon:hover {
+    color: black;
+    font-weight: 700;
+    font-family: var(--font-text);
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+
+/* ? for Tablets and Ipads screen size */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .trend-dashboard {
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+/* ? For Mobile size screens */
+
+@media screen and (max-width: 767px) {
+    .trend-dashboard {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+
+    }
+}

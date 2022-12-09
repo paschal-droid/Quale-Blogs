@@ -1,0 +1,87 @@
+/* ? For Laptop, desktop and 4k screen size */
+.search-container {
+    display: flex;
+    width: 94.9%;
+    float: right;
+    display: flex;
+    z-index: -99;    
+    padding: 15px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-grey);
+
+}.followers-shortcut {
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+}
+
+.followers-shortcut a{
+   background: none;
+    border: 0;
+    font-size: 1.2rem;
+    color: var(--grey);
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.followers-shortcut a:hover, .followers-shortcut a:focus {
+    background-color: var(--black);
+    color: #fff;
+    
+}
+
+.search {
+    position: relative;
+    margin-left: 10%;
+    font-family: var(--font-text);
+    color: var(--black);
+
+}
+
+.search input {
+    padding: 12px 100px 12px 40px;
+    font-size: 12px;
+    background-color: transparent;
+    font-weight: 400;
+    flex-shrink: 2;
+    font-family: var(--font-text);
+    border: 1px solid var(--light-grey);
+    width: auto;
+    outline: var(--light-grey);
+    border-radius: 15px;
+}
+
+.s-icon {
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    top: 12px;
+    left: 18px;
+    font-weight: 100;
+    color: var(--black);
+    text-align: center;
+    
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+
+/* ? for Tablets and Ipads screen size */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .searchbar {
+        width: 90%;
+    }
+}
+
+
+/* ? For Mobile size screens */
+
+@media screen and (max-width: 767px) {
+    .searchbar {
+        width: 92%;
+    }
+}

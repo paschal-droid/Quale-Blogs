@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+Bubbles:regular);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans+JP:100,200,300,regular,500,600,700);
+
+
+:root {
+  --sky-blue: #CDF0EA;
+  --grey:#8b8a8a;
+  --light-grey: #d7d7d7;
+  --purple: rgb(117, 4, 198);
+  --peach: rgb(224, 93, 93);
+  --mint-yellow: #fff47e;
+  --black: #393E46;
+
+  --font-head: 'Rubik Bubbles';
+  --font-text: 'IBM Plex Sans JP';
+  --gradient-var-1: linear-gradient(90deg, #CDF0EA 6%, #ECC5FB 100%);
+  --gradient-var-2: linear-gradient(270deg, #F9F9F9 22%, #FAF4B7 98%);
+  --gradient-var-3: linear-gradient(90deg, #CDF0EA 36%, #393E46 100%);;
+
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0. 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0. 0.3);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--grey);
+  outline: 1px solid var(--light-grey);
+}
+
+
+.gradient-text {
+  background: var(--gradient-var-3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

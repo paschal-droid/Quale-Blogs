@@ -1,0 +1,6 @@
+export {default as Sidebar} from "./Sidebar/Sidebar.jsx"
+export {default as SearchBar} from "./Searchbar/SearchBar.jsx"
+export {default as Trending} from "./Trending/Trending.jsx"
+export {default as DailyFeed} from "./DailyFeed/DailyFeed.jsx"
+export {default as Followers} from "./Followers/Followers.jsx"
+export {default as Details} from "./Details/Details.jsx"

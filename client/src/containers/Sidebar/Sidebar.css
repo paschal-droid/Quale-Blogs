@@ -1,0 +1,82 @@
+
+/* ? For Laptop, desktop and 4k screen size */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 5%;
+    height: 100vh;
+    align-items: center;
+    z-index: 999;
+    border-right: 1px solid var(--light-grey);
+    position: fixed;
+
+}
+
+.logo {
+    width: 100%;
+    align-self: flex-start;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+.sidebar-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex: 0.7;
+    align-items: center;
+    padding-top: 50px;
+    justify-content: space-around; 
+}
+
+.sidebar-button {
+    background: none;
+    border: 0;
+    font-size: 1.2rem;
+    color: var(--grey);
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar-list button:hover, .sidebar-list button:focus {
+    background-color: var(--black);
+    color: #fff;
+    
+}
+
+
+/* ? for Tablets and Ipads screen size */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .sidebar {
+        width: 8%;
+
+    }
+
+}
+
+/* ? For Mobile size screens */
+
+@media screen and (max-width: 767px) {
+    .sidebar {
+        width: 6%;
+    }
+
+    .sidebar-list {
+        flex: 0.8;
+        justify-content: center;
+    }
+
+    .sidebar-list > * {
+        margin: 30px 0;
+    }
+
+    .sidebar-button {
+        font-size: 1rem;
+    }
+
+}
